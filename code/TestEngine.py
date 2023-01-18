@@ -7,6 +7,7 @@ tests = [t for t in getmembers(Tests) if isfunction(t[1]) and t[0].startswith("e
 
 
 def run():
+    fails = 0
     for test in tests:
         t_name, t_func = test
         try:
@@ -14,3 +15,6 @@ def run():
             print(f"PASS : {t_name}")
         except AssertionError:
             print(f"FAIL : {t_name}")
+            fails += 1
+
+    return fails

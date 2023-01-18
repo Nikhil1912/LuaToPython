@@ -1,3 +1,5 @@
+import sys
+
 import TestEngine
 from Sym import Sym
 from Num import Num
@@ -19,4 +21,5 @@ def eg_check_nums():
 
 
 if __name__ == "__main__":
-    TestEngine.run()
+    fails = TestEngine.run()
+    sys.exit(fails)
