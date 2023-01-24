@@ -7,6 +7,9 @@ tests = [t for t in getmembers(Tests) if isfunction(t[1]) and t[0].startswith("e
 
 
 def run(the):
+    '''
+    Method which runs all the tests and writes their status out.txt file
+    '''
     fails = 0
     file = open('../etc/out.txt','w')
     for test in tests:

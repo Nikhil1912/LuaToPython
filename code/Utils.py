@@ -1,3 +1,6 @@
+'''
+Utility functions
+'''
 import math
 
 
@@ -6,7 +9,6 @@ def rnd(n, nPlaces=3):
     return math.floor(n * mult + 0.5) / mult
 
 def rand(lo=0,hi=1,Seed=937162211):
-    #Seed=937162211
     Seed = (16807 * Seed) % 2147483647
     return lo + (hi-lo) * Seed / 2147483647,Seed
 
