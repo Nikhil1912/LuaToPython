@@ -60,6 +60,5 @@ if __name__ == "__main__":
     if the['help']:
       print(__doc__)
       sys.exit(2)
-    print(the)
     TestEngine.run(the)
     

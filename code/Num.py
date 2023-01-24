@@ -3,7 +3,9 @@ import math
 
 class Num:
     def __init__(self):
-        self.n = self.mu = self.m2 = 0
+        self.n = 0
+        self.mu = 0
+        self.m2 = 0
         self.lo = math.inf
         self.hi = -math.inf
 
@@ -11,11 +13,11 @@ class Num:
         if n != '?':
             self.n += 1
             d = n - self.mu
-            self.mu += d/self.n     # Might have to replace with integer division
+            self.mu += (d/self.n)     # Might have to replace with integer division
             self.m2 += d * (n - self.mu)
             self.lo = min(n, self.lo)
             self.hi = max(n, self.hi)
-
+            
     def mid(self):
         return self.mu
 
