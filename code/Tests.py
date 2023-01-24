@@ -38,10 +38,5 @@ def eg_check_rands(the):
     m2=rnd(num2.mid(),10)
     assert m1==m2 and .5==rnd(m1,1)
     
-    """
-    Seed=the.seed; for i=1,10^3 do num1:add( rand(0,1) ) end
-  Seed=the.seed; for i=1,10^3 do num2:add( rand(0,1) ) end
-  local m1,m2 = rnd(num1:mid(),10), rnd(num2:mid(),10)
-  return m1==m2 and .5 == rnd(m1,1) end )
-    """
+   
 
