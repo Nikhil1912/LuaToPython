@@ -1,10 +1,8 @@
-#
-HW 1 Script
-#
+# HW 1 Script
 
-##
-Document file for HW1 main.py file
-##
+
+## Document file for HW1 main.py file
+
 
 
 - To view all command line options run 
