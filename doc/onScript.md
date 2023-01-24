@@ -1,7 +1,7 @@
 # HW 1 Script
 
 
-## Document file for HW1 main.py file
+### Document file for HW1 main.py file
 
 
 
