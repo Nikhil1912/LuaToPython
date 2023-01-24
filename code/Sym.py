@@ -17,10 +17,11 @@ class Sym:
                 self.most, self.mode = self.has[x], x
 
     def mid(self):
+        #returns mode
         return self.mode
 
     def div(self):
-
+        #returns entropy
         def fun(p):
             return p * math.log(p, 2)
 

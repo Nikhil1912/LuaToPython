@@ -26,6 +26,9 @@ def coerce(s):
       except: return s
 
 def get_default():
+  '''
+  Get default values of arguments from doc string
+  '''
   global the
   p=r"\n[\s]+-[\S]+[\s]+--([\S]+)[^\n]+= ([\S]+)"
   for k,v in re.findall(p,__doc__):
@@ -33,6 +36,9 @@ def get_default():
   #return t
 
 def update(opts,t):
+  '''
+  Update arguments from commandline
+  '''
   for opt, arg in opts:
     if opt in ("-d", "--dump"):
       t['dump'] = coerce(arg)
